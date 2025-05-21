@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1968b565-51ed-4264-8b8d-71cd1a4793d5" name="Changes" comment="usersname fix">
-      <change afterPath="$PROJECT_DIR$/.github/workflow/python.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/github/workflows/python.yml" beforeDir="false" />
-    </list>
+    <list default="true" id="1968b565-51ed-4264-8b8d-71cd1a4793d5" name="Changes" comment="username fix" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -249,7 +245,23 @@
       <option name="project" value="LOCAL" />
       <updated>1747868564201</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="tests launching">
+      <option name="closed" value="true" />
+      <created>1747868953396</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1747868953396</updated>
+    </task>
+    <task id="LOCAL-00010" summary="username fix">
+      <option name="closed" value="true" />
+      <created>1747869004386</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1747869004386</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -259,6 +271,8 @@
     <MESSAGE value="reformer functions into class clients" />
     <MESSAGE value="job for launcying tests" />
     <MESSAGE value="usersname fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="usersname fix" />
+    <MESSAGE value="tests launching" />
+    <MESSAGE value="username fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="username fix" />
   </component>
 </project>
