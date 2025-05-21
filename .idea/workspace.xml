@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1968b565-51ed-4264-8b8d-71cd1a4793d5" name="Changes" comment="username fix" />
+    <list default="true" id="1968b565-51ed-4264-8b8d-71cd1a4793d5" name="Changes" comment="yml fix" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -261,7 +261,23 @@
       <option name="project" value="LOCAL" />
       <updated>1747869004386</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="username fix">
+      <option name="closed" value="true" />
+      <created>1747869312107</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1747869312107</updated>
+    </task>
+    <task id="LOCAL-00012" summary="yml fix">
+      <option name="closed" value="true" />
+      <created>1747869466909</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1747869466909</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -273,6 +289,7 @@
     <MESSAGE value="usersname fix" />
     <MESSAGE value="tests launching" />
     <MESSAGE value="username fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="username fix" />
+    <MESSAGE value="yml fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="yml fix" />
   </component>
 </project>
