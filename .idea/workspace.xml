@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1968b565-51ed-4264-8b8d-71cd1a4793d5" name="Changes" comment="reformer functions into class clients">
-      <change afterPath="$PROJECT_DIR$/github/workflows/python.yml" afterDir="false" />
+    <list default="true" id="1968b565-51ed-4264-8b8d-71cd1a4793d5" name="Changes" comment="usersname fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -224,7 +223,23 @@
       <option name="project" value="LOCAL" />
       <updated>1747695808889</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="job for launcying tests">
+      <option name="closed" value="true" />
+      <created>1747868108779</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1747868108779</updated>
+    </task>
+    <task id="LOCAL-00007" summary="usersname fix">
+      <option name="closed" value="true" />
+      <created>1747868235855</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1747868235855</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -232,6 +247,8 @@
     <MESSAGE value="the 1st test" />
     <MESSAGE value="the code of token activation" />
     <MESSAGE value="reformer functions into class clients" />
-    <option name="LAST_COMMIT_MESSAGE" value="reformer functions into class clients" />
+    <MESSAGE value="job for launcying tests" />
+    <MESSAGE value="usersname fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="usersname fix" />
   </component>
 </project>
