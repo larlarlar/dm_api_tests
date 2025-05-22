@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1968b565-51ed-4264-8b8d-71cd1a4793d5" name="Changes" comment="test_put_v1_account_token changed">
+    <list default="true" id="1968b565-51ed-4264-8b8d-71cd1a4793d5" name="Changes" comment="tests are changed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/functional/post_v1_account/test_post_v1_account.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/functional/post_v1_account/test_post_v1_account.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/functional/post_v1_account_login/test_post_v1_account_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/functional/post_v1_account_login/test_post_v1_account_login.py" afterDir="false" />
@@ -63,7 +63,7 @@
     "Python.test.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "class__client",
+    "git-widget-placeholder": "#1 on class__client",
     "ignore.virus.scanning.warn.message": "true",
     "settings.editor.selected.configurable": "preferences.sourceCode.Python"
   }
@@ -408,7 +408,23 @@
       <option name="project" value="LOCAL" />
       <updated>1747950845743</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="tests are changed">
+      <option name="closed" value="true" />
+      <created>1747951195636</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1747951195636</updated>
+    </task>
+    <task id="LOCAL-00031" summary="tests are changed">
+      <option name="closed" value="true" />
+      <created>1747951371380</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1747951371380</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -430,6 +446,7 @@
     <MESSAGE value="test_post_v1_account_token commit" />
     <MESSAGE value="tests are corrected commit" />
     <MESSAGE value="test_put_v1_account_token changed" />
-    <option name="LAST_COMMIT_MESSAGE" value="test_put_v1_account_token changed" />
+    <MESSAGE value="tests are changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="tests are changed" />
   </component>
 </project>

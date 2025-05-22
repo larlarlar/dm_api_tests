@@ -11,8 +11,8 @@ def test_post_v1_account():
     login_api = LoginApi(host='http://5.63.153.31:5051')
     mailhog_api = MailhogApi(host='http://5.63.153.31:5025')
 
-    login = 'UniqueLQA74'
-    password = 'RobinwolliamssRulez'
+    login = 'Kasaradysiu'
+    password = 'KasaradysiuKasaradysiu'
     email = f'{login}@mail.ru'
     json_data = {
         'login': login,
@@ -76,7 +76,3 @@ def get_activation_token_by_login(login, response):
         if user_login == login:
             token = user_data['ConfirmationLinkUrl'].split('/')[-1]
     return token
-
-
-
-
