@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1968b565-51ed-4264-8b8d-71cd1a4793d5" name="Changes" comment="test_post_v1_account_token commit">
-      <change beforePath="$PROJECT_DIR$/tests/functional/post_v1_account/test_post_v1_account.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/functional/post_v1_account/test_post_v1_account.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/functional/post_v1_account_login/test_post_v1_account_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/functional/post_v1_account_login/test_post_v1_account_login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/functional/put_v1_account_email/test_put_v1_account_mail.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/functional/put_v1_account_email/test_put_v1_account_mail.py" afterDir="false" />
+    <list default="true" id="1968b565-51ed-4264-8b8d-71cd1a4793d5" name="Changes" comment="test_put_v1_account_token changed">
       <change beforePath="$PROJECT_DIR$/tests/functional/put_v1_account_token/test_put_v1_account_token.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/functional/put_v1_account_token/test_put_v1_account_token.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -375,7 +372,23 @@
       <option name="project" value="LOCAL" />
       <updated>1747950264207</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="tests are corrected commit">
+      <option name="closed" value="true" />
+      <created>1747950518948</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1747950518948</updated>
+    </task>
+    <task id="LOCAL-00027" summary="test_put_v1_account_token changed">
+      <option name="closed" value="true" />
+      <created>1747950649759</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1747950649759</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -395,6 +408,8 @@
     <MESSAGE value="test_post_v1_account_login commit" />
     <MESSAGE value="test_post_v1_account_mail commit" />
     <MESSAGE value="test_post_v1_account_token commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="test_post_v1_account_token commit" />
+    <MESSAGE value="tests are corrected commit" />
+    <MESSAGE value="test_put_v1_account_token changed" />
+    <option name="LAST_COMMIT_MESSAGE" value="test_put_v1_account_token changed" />
   </component>
 </project>
