@@ -21,7 +21,7 @@ class AccountApi:
         """
         response = requests.post(
             url=f'{self.host}/v1/account',
-            json=json_data
+            json=json_data,
         )
         return response
 
@@ -39,6 +39,22 @@ class AccountApi:
         }
         response = requests.put(
             url=f'{self.host}/v1/account/{token}',
-            headers=headers
+            headers=headers,
+        )
+        return response
+
+    def put_v1_account_mail(
+            self,
+            json_data,
+    ):
+        """
+        Change registered user email
+        :param json_data:
+        :return:
+        """
+
+        response = requests.put(
+            url=f'{self.host}/v1/account/email',
+            json=json_data,
         )
         return response
