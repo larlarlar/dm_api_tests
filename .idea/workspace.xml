@@ -72,7 +72,7 @@
       <recent name="C:\Users\laris\PycharmProjects\dm_api_tests\dm_api_account\apis" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_post_v1_account.test_post_v1_account">
+  <component name="RunManager" selected="Python tests.Python tests for test_put_v1_account_mail.test_put_v1_account_mail">
     <configuration name="Python tests for test_post_v1_account_login.test_put_v1_account_login" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="dm_api_tests" />
       <option name="ENV_FILES" value="" />
@@ -150,10 +150,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_post_v1_account.test_post_v1_account" />
         <item itemvalue="Python tests.Python tests for test_put_v1_account_mail.test_put_v1_account_mail" />
-        <item itemvalue="Python tests.Python tests for test_put_v1_account_token.test_put_v1_account_token" />
         <item itemvalue="Python tests.Python tests for test_post_v1_account_login.test_put_v1_account_login" />
+        <item itemvalue="Python tests.Python tests for test_post_v1_account.test_post_v1_account" />
+        <item itemvalue="Python tests.Python tests for test_put_v1_account_token.test_put_v1_account_token" />
         <item itemvalue="Python tests.Python tests for tests.functional.post_v1_account.test_post_v1_account.test_post_v1_account" />
       </list>
     </recent_temporary>
