@@ -5,6 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1968b565-51ed-4264-8b8d-71cd1a4793d5" name="Changes" comment="test_put_v1_account_token changed">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/functional/post_v1_account/test_post_v1_account.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/functional/post_v1_account/test_post_v1_account.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/functional/post_v1_account_login/test_post_v1_account_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/functional/post_v1_account_login/test_post_v1_account_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/functional/put_v1_account_email/test_put_v1_account_mail.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/functional/put_v1_account_email/test_put_v1_account_mail.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/functional/put_v1_account_token/test_put_v1_account_token.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/functional/put_v1_account_token/test_put_v1_account_token.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -388,7 +392,23 @@
       <option name="project" value="LOCAL" />
       <updated>1747950649759</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="test_put_v1_account_token changed">
+      <option name="closed" value="true" />
+      <created>1747950838515</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1747950838515</updated>
+    </task>
+    <task id="LOCAL-00029" summary="test_put_v1_account_token changed">
+      <option name="closed" value="true" />
+      <created>1747950845743</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1747950845743</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
