@@ -1,12 +1,11 @@
 from json import loads
 
-from dm_api_account.apis.account_api import AccountApi
-from dm_api_account.apis.login_api import LoginApi
-from api_mailhog.apis.mailhog_api import MailhogApi
 from restclient.configuration import Configuration as MailhogConfiguration
 from restclient.configuration import Configuration as DmApiConfiguration
-import structlog
+from services.dm_api_account import DMApiAccount
+from services.api_mailhog import MailHogApi
 
+import structlog
 
 structlog.configure(
     processors=[
@@ -18,16 +17,15 @@ structlog.configure(
     ]
 )
 
-
 def test_post_v1_account():
     # Регистрация пользователя
     mailhog_configuration = MailhogConfiguration(host='http://5.63.153.31:5025')
     dm_api_configuration = DmApiConfiguration(host='http://5.63.153.31:5051', disable_log=False)
-    account_api = AccountApi(configuration=dm_api_configuration)
-    login_api = LoginApi(configuration=dm_api_configuration)
-    mailhog_api = MailhogApi(configuration=mailhog_configuration)
 
-    login = 'mndflasfds'
+    account = DMApiAccount(configuration=dm_api_configuration)
+    mailhog = MailHogApi(configuration=mailhog_configuration)
+
+    login = 'tset1'
     password = 'KasaradysiuKasaradysiu'
     email = f'{login}@mail.ru'
     json_data = {
@@ -36,13 +34,12 @@ def test_post_v1_account():
         'password': password,
     }
 
-    response = account_api.post_v1_account(json_data=json_data)
-
+    response = account.account_api.post_v1_account(json_data=json_data)
     assert response.status_code == 201, f'Пользователь не был создан {response.json()}'
 
     # Получить письма из почтового сервера
 
-    response = mailhog_api.get_api_v2_messages()
+    response = mailhog.mailhog_api.get_api_v2_messages()
 
     assert response.status_code == 200, f'Письма не были получены'
 
@@ -54,7 +51,7 @@ def test_post_v1_account():
 
     # Активация пользователя
 
-    response = account_api.put_v1_account_token(token=token)
+    response = account.account_api.put_v1_account_token(token=token)
 
     assert response.status_code == 200, f'Пользователь не был активирован'
 
@@ -66,7 +63,7 @@ def test_post_v1_account():
         'rememberMe': True,
     }
 
-    response = login_api.post_v1_account_login(json_data=json_data)
+    response = account.login_api.post_v1_account_login(json_data=json_data)
 
     assert response.status_code == 200, f'Пользователь не был авторизован'
 
