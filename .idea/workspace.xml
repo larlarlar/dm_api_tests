@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1968b565-51ed-4264-8b8d-71cd1a4793d5" name="Changes" comment="logging and curl are added">
+      <change afterPath="$PROJECT_DIR$/restclient/configuration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_mailhog/apis/mailhog_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_mailhog/apis/mailhog_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dm_api_account/apis/account_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/dm_api_account/apis/account_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dm_api_account/apis/login_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/dm_api_account/apis/login_api.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/functional/post_v1_account/test_post_v1_account.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/functional/post_v1_account/test_post_v1_account.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/functional/put_v1_account_token/test_put_v1_account_token.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/functional/put_v1_account_token/test_put_v1_account_token.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/restclient/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/restclient/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/restclient/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/restclient/client.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;larlarlar&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/larlarlar/dm_api_tests.git&quot;,
+    &quot;accountId&quot;: &quot;7c470857-a22e-4c3f-9cef-2646cc75f17b&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2x0mSphXBWJg5HxdjqXOgmK15fS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python tests.Python tests for test_post_v1_account.test_post_v1_account.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_post_v1_account_login.test_put_v1_account_login.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_put_v1_account_mail.test_put_v1_account_mail.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for test_put_v1_account_token.test_put_v1_account_token.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests in test_post_v1_account.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;#1 on class__client&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Python&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\laris\PycharmProjects\dm_api_tests" />
+      <recent name="C:\Users\laris\PycharmProjects\dm_api_tests\tests\functional\post_v1_account" />
+      <recent name="C:\Users\laris\PycharmProjects\dm_api_tests\api_mailhog\apis" />
+      <recent name="C:\Users\laris\PycharmProjects\dm_api_tests\dm_api_account\apis" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python tests.Python tests for test_put_v1_account_mail.test_put_v1_account_mail">
+    <configuration name="Python tests for test_post_v1_account_login.test_put_v1_account_login" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="dm_api_tests" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/functional/post_v1_account_login" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_post_v1_account_login.test_put_v1_account_login&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_post_v1_account.test_post_v1_account" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="dm_api_tests" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/functional/post_v1_account" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_post_v1_account.test_post_v1_account&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_put_v1_account_mail.test_put_v1_account_mail" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="dm_api_tests" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/functional/put_v1_account_email" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_put_v1_account_mail.test_put_v1_account_mail&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_put_v1_account_token.test_put_v1_account_token" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="dm_api_tests" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/functional/put_v1_account_token" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_put_v1_account_token.test_put_v1_account_token&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for tests.functional.post_v1_account.test_post_v1_account.test_post_v1_account" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="dm_api_tests" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.functional.post_v1_account.test_post_v1_account.test_post_v1_account&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests for test_put_v1_account_mail.test_put_v1_account_mail" />
+        <item itemvalue="Python tests.Python tests for test_post_v1_account.test_post_v1_account" />
+        <item itemvalue="Python tests.Python tests for test_post_v1_account_login.test_put_v1_account_login" />
+        <item itemvalue="Python tests.Python tests for test_put_v1_account_token.test_put_v1_account_token" />
+        <item itemvalue="Python tests.Python tests for tests.functional.post_v1_account.test_post_v1_account.test_post_v1_account" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-2ee2454479a3-9cdd278e9d02-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-251.25410.122" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1968b565-51ed-4264-8b8d-71cd1a4793d5" name="Changes" comment="" />
+      <created>1747083367917</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1747083367917</updated>
+    </task>
+    <task id="LOCAL-00001" summary="the 1st commit">
+      <option name="closed" value="true" />
+      <created>1747347061952</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1747347061953</updated>
+    </task>
+    <task id="LOCAL-00002" summary="the 1st test">
+      <option name="closed" value="true" />
+      <created>1747566711501</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1747566711501</updated>
+    </task>
+    <task id="LOCAL-00003" summary="the code of token activation">
+      <option name="closed" value="true" />
+      <created>1747685609220</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1747685609222</updated>
+    </task>
+    <task id="LOCAL-00004" summary="reformer functions into class clients">
+      <option name="closed" value="true" />
+      <created>1747695784366</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1747695784366</updated>
+    </task>
+    <task id="LOCAL-00005" summary="reformer functions into class clients">
+      <option name="closed" value="true" />
+      <created>1747695808889</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1747695808889</updated>
+    </task>
+    <task id="LOCAL-00006" summary="job for launcying tests">
+      <option name="closed" value="true" />
+      <created>1747868108779</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1747868108779</updated>
+    </task>
+    <task id="LOCAL-00007" summary="usersname fix">
+      <option name="closed" value="true" />
+      <created>1747868235855</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1747868235855</updated>
+    </task>
+    <task id="LOCAL-00008" summary="usersname fix">
+      <option name="closed" value="true" />
+      <created>1747868564201</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1747868564201</updated>
+    </task>
+    <task id="LOCAL-00009" summary="tests launching">
+      <option name="closed" value="true" />
+      <created>1747868953396</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1747868953396</updated>
+    </task>
+    <task id="LOCAL-00010" summary="username fix">
+      <option name="closed" value="true" />
+      <created>1747869004386</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1747869004386</updated>
+    </task>
+    <task id="LOCAL-00011" summary="username fix">
+      <option name="closed" value="true" />
+      <created>1747869312107</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1747869312107</updated>
+    </task>
+    <task id="LOCAL-00012" summary="yml fix">
+      <option name="closed" value="true" />
+      <created>1747869466909</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1747869466909</updated>
+    </task>
+    <task id="LOCAL-00013" summary="yml fix">
+      <option name="closed" value="true" />
+      <created>1747869585129</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1747869585129</updated>
+    </task>
+    <task id="LOCAL-00014" summary="yml fix">
+      <option name="closed" value="true" />
+      <created>1747869683515</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1747869683515</updated>
+    </task>
+    <task id="LOCAL-00015" summary="test fix">
+      <option name="closed" value="true" />
+      <created>1747949688399</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1747949688399</updated>
+    </task>
+    <task id="LOCAL-00016" summary="test fix">
+      <option name="closed" value="true" />
+      <created>1747949713854</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1747949713854</updated>
+    </task>
+    <task id="LOCAL-00017" summary="test fix">
+      <option name="closed" value="true" />
+      <created>1747949759483</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1747949759483</updated>
+    </task>
+    <task id="LOCAL-00018" summary="name fix">
+      <option name="closed" value="true" />
+      <created>1747949788385</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1747949788385</updated>
+    </task>
+    <task id="LOCAL-00019" summary="tests are added">
+      <option name="closed" value="true" />
+      <created>1747949886775</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1747949886775</updated>
+    </task>
+    <task id="LOCAL-00020" summary="test_post_v1_account commit">
+      <option name="closed" value="true" />
+      <created>1747950062593</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1747950062593</updated>
+    </task>
+    <task id="LOCAL-00021" summary="test_post_v1_account_login commit">
+      <option name="closed" value="true" />
+      <created>1747950112218</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1747950112218</updated>
+    </task>
+    <task id="LOCAL-00022" summary="test_post_v1_account_mail commit">
+      <option name="closed" value="true" />
+      <created>1747950162687</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1747950162687</updated>
+    </task>
+    <task id="LOCAL-00023" summary="test_post_v1_account_mail commit">
+      <option name="closed" value="true" />
+      <created>1747950181882</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1747950181882</updated>
+    </task>
+    <task id="LOCAL-00024" summary="test_post_v1_account_token commit">
+      <option name="closed" value="true" />
+      <created>1747950259027</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1747950259027</updated>
+    </task>
+    <task id="LOCAL-00025" summary="test_post_v1_account_token commit">
+      <option name="closed" value="true" />
+      <created>1747950264207</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1747950264207</updated>
+    </task>
+    <task id="LOCAL-00026" summary="tests are corrected commit">
+      <option name="closed" value="true" />
+      <created>1747950518948</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1747950518948</updated>
+    </task>
+    <task id="LOCAL-00027" summary="test_put_v1_account_token changed">
+      <option name="closed" value="true" />
+      <created>1747950649759</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1747950649759</updated>
+    </task>
+    <task id="LOCAL-00028" summary="test_put_v1_account_token changed">
+      <option name="closed" value="true" />
+      <created>1747950838515</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1747950838515</updated>
+    </task>
+    <task id="LOCAL-00029" summary="test_put_v1_account_token changed">
+      <option name="closed" value="true" />
+      <created>1747950845743</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1747950845743</updated>
+    </task>
+    <task id="LOCAL-00030" summary="tests are changed">
+      <option name="closed" value="true" />
+      <created>1747951195636</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1747951195636</updated>
+    </task>
+    <task id="LOCAL-00031" summary="tests are changed">
+      <option name="closed" value="true" />
+      <created>1747951371380</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1747951371380</updated>
+    </task>
+    <task id="LOCAL-00032" summary="tests are changed">
+      <option name="closed" value="true" />
+      <created>1747952067195</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1747952067195</updated>
+    </task>
+    <task id="LOCAL-00033" summary="logging and curl are added">
+      <option name="closed" value="true" />
+      <created>1748721385782</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1748721385783</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="the 1st commit" />
+    <MESSAGE value="the 1st test" />
+    <MESSAGE value="the code of token activation" />
+    <MESSAGE value="reformer functions into class clients" />
+    <MESSAGE value="job for launcying tests" />
+    <MESSAGE value="usersname fix" />
+    <MESSAGE value="tests launching" />
+    <MESSAGE value="username fix" />
+    <MESSAGE value="yml fix" />
+    <MESSAGE value="test fix" />
+    <MESSAGE value="name fix" />
+    <MESSAGE value="tests are added" />
+    <MESSAGE value="test_post_v1_account commit" />
+    <MESSAGE value="test_post_v1_account_login commit" />
+    <MESSAGE value="test_post_v1_account_mail commit" />
+    <MESSAGE value="test_post_v1_account_token commit" />
+    <MESSAGE value="tests are corrected commit" />
+    <MESSAGE value="test_put_v1_account_token changed" />
+    <MESSAGE value="tests are changed" />
+    <MESSAGE value="logging and curl are added" />
+    <option name="LAST_COMMIT_MESSAGE" value="logging and curl are added" />
+  </component>
+</project>
