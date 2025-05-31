@@ -4,6 +4,18 @@ from dm_api_account.apis.account_api import AccountApi
 from dm_api_account.apis.login_api import LoginApi
 from api_mailhog.apis.mailhog_api import MailhogApi
 from tests.functional.post_v1_account.test_post_v1_account import get_activation_token_by_login
+import structlog
+
+
+structlog.configure(
+    processors=[
+        structlog.processors.JSONRenderer(
+            indent=4,
+            ensure_ascii=True,
+            # sort_keys=True
+        )
+    ]
+)
 
 
 def test_put_v1_account_token():
