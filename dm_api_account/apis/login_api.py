@@ -1,7 +1,4 @@
-import requests
-from requests import Response
-
-from tests.restclient.client import RestClient
+from restclient.client import RestClient
 
 
 class LoginApi(RestClient):

@@ -4,16 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1968b565-51ed-4264-8b8d-71cd1a4793d5" name="Changes" comment="tests are changed">
-      <change afterPath="$PROJECT_DIR$/tests/restclient/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/restclient/client.py" afterDir="false" />
+    <list default="true" id="1968b565-51ed-4264-8b8d-71cd1a4793d5" name="Changes" comment="logging and curl are added">
+      <change afterPath="$PROJECT_DIR$/restclient/configuration.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api_mailhog/apis/mailhog_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_mailhog/apis/mailhog_api.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dm_api_account/apis/account_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/dm_api_account/apis/account_api.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dm_api_account/apis/login_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/dm_api_account/apis/login_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/functional/post_v1_account/test_post_v1_account.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/functional/post_v1_account/test_post_v1_account.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/functional/post_v1_account_login/test_post_v1_account_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/functional/post_v1_account_login/test_post_v1_account_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/functional/put_v1_account_token/test_put_v1_account_token.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/functional/put_v1_account_token/test_put_v1_account_token.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/restclient/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/restclient/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/restclient/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/restclient/client.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,12 +74,13 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\laris\PycharmProjects\dm_api_tests" />
       <recent name="C:\Users\laris\PycharmProjects\dm_api_tests\tests\functional\post_v1_account" />
       <recent name="C:\Users\laris\PycharmProjects\dm_api_tests\api_mailhog\apis" />
       <recent name="C:\Users\laris\PycharmProjects\dm_api_tests\dm_api_account\apis" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_post_v1_account.test_post_v1_account">
+  <component name="RunManager" selected="Python tests.Python tests for test_put_v1_account_mail.test_put_v1_account_mail">
     <configuration name="Python tests for test_post_v1_account_login.test_put_v1_account_login" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="dm_api_tests" />
       <option name="ENV_FILES" value="" />
@@ -157,10 +158,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_put_v1_account_mail.test_put_v1_account_mail" />
         <item itemvalue="Python tests.Python tests for test_post_v1_account.test_post_v1_account" />
         <item itemvalue="Python tests.Python tests for test_post_v1_account_login.test_put_v1_account_login" />
         <item itemvalue="Python tests.Python tests for test_put_v1_account_token.test_put_v1_account_token" />
-        <item itemvalue="Python tests.Python tests for test_put_v1_account_mail.test_put_v1_account_mail" />
         <item itemvalue="Python tests.Python tests for tests.functional.post_v1_account.test_post_v1_account.test_post_v1_account" />
       </list>
     </recent_temporary>
@@ -436,7 +437,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747952067195</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="logging and curl are added">
+      <option name="closed" value="true" />
+      <created>1748721385782</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1748721385783</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -459,6 +468,7 @@
     <MESSAGE value="tests are corrected commit" />
     <MESSAGE value="test_put_v1_account_token changed" />
     <MESSAGE value="tests are changed" />
-    <option name="LAST_COMMIT_MESSAGE" value="tests are changed" />
+    <MESSAGE value="logging and curl are added" />
+    <option name="LAST_COMMIT_MESSAGE" value="logging and curl are added" />
   </component>
 </project>
