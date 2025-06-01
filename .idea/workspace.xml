@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1968b565-51ed-4264-8b8d-71cd1a4793d5" name="Changes" comment="facade">
-      <change afterPath="$PROJECT_DIR$/decorator.py" afterDir="false" />
+    <list default="true" id="1968b565-51ed-4264-8b8d-71cd1a4793d5" name="Changes" comment="my first decorator">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/helpers/account_helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/account_helper.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/functional/post_v1_account/test_post_v1_account.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/functional/post_v1_account/test_post_v1_account.py" afterDir="false" />
@@ -472,7 +471,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748736697693</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="my first decorator">
+      <option name="closed" value="true" />
+      <created>1748780081036</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1748780081036</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -498,7 +505,8 @@
     <MESSAGE value="logging and curl are added" />
     <MESSAGE value="disable log" />
     <MESSAGE value="facade" />
-    <option name="LAST_COMMIT_MESSAGE" value="facade" />
+    <MESSAGE value="my first decorator" />
+    <option name="LAST_COMMIT_MESSAGE" value="my first decorator" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
