@@ -1,6 +1,6 @@
 from json import loads
 
-from tests.functional.post_v1_account.test_post_v1_account import get_activation_token_by_login
+from helpers.account_helper import AccountHelper
 from restclient.configuration import Configuration as MailhogConfiguration
 from restclient.configuration import Configuration as DmApiConfiguration
 from services.dm_api_account import DMApiAccount
@@ -21,52 +21,17 @@ structlog.configure(
 
 
 def test_put_v1_account_login():
-    # Регистрация пользователя
+
     mailhog_configuration = MailhogConfiguration(host='http://5.63.153.31:5025')
     dm_api_configuration = DmApiConfiguration(host='http://5.63.153.31:5051', disable_log=False)
 
     account = DMApiAccount(configuration=dm_api_configuration)
     mailhog = MailHogApi(configuration=mailhog_configuration)
+    account_helper = AccountHelper(dm_account_api=account, mailhog=mailhog)
 
-    login = 'tset4'
+
+    login = 'testest21'
     password = 'RaclemanitRaclemanit'
     email = f'{login}@mail.ru'
-    json_data = {
-        'login': login,
-        'email': email,
-        'password': password,
-    }
 
-    response = account.account_api.post_v1_account(json_data=json_data)
-
-    assert response.status_code == 201, f'Пользователь не был создан {response.json()}'
-
-    # Получить письма из почтового сервера
-
-    response = mailhog.mailhog_api.get_api_v2_messages()
-
-    assert response.status_code == 200, f'Письма не были получены'
-
-    # pprint.pprint(response.json())
-
-    # Получить активационный токен
-    token = get_activation_token_by_login(login, response)
-    assert token is not None, f'Токен для пользователя {login} не был получен'
-
-    # Активация пользователя
-
-    response = account.account_api.put_v1_account_token(token=token)
-
-    assert response.status_code == 200, f'Пользователь не был активирован'
-
-    # Авторизоваться
-
-    json_data = {
-        'login': login,
-        'password': password,
-        'rememberMe': True,
-    }
-
-    response = account.login_api.post_v1_account_login(json_data=json_data)
-
-    assert response.status_code == 200, f'Пользователь не был авторизован'
+    account_helper.authenticate_via_credentials(login=login, email=email, password=password)

@@ -1,5 +1,6 @@
 from json import loads
-from tests.functional.post_v1_account.test_post_v1_account import get_activation_token_by_login
+
+from helpers.account_helper import AccountHelper
 from restclient.configuration import Configuration as MailhogConfiguration
 from restclient.configuration import Configuration as DmApiConfiguration
 from services.dm_api_account import DMApiAccount
@@ -23,28 +24,11 @@ def test_put_v1_account_token():
 
     account = DMApiAccount(configuration=dm_api_configuration)
     mailhog = MailHogApi(configuration=mailhog_configuration)
+    account_helper = AccountHelper(dm_account_api=account, mailhog=mailhog)
 
-    login = 'tset6'
+
+    login = 'tset91231'
     password = 'BertillippoBertillippo'
     email = f'{login}@mail.ru'
-    json_data = {
-        'login': login,
-        'email': email,
-        'password': password,
-    }
+    account_helper.activate_registered_user(login=login, password=password, email=email)
 
-    # Регистрация
-    response = account.account_api.post_v1_account(json_data=json_data)
-    assert response.status_code == 201, f'Пользователь не был создан {response.json()}'
-
-    # Получить письма из почтового сервера
-    response = mailhog.mailhog_api.get_api_v2_messages()
-    assert response.status_code == 200, 'Письма не были получены'
-
-    # Получить активационный токен
-    token = get_activation_token_by_login(login, response)
-    assert token is not None, f'Токен для пользователя {login} не был получен'
-
-    # Активация пользователя
-    response = account.account_api.put_v1_account_token(token=token)
-    assert response.status_code == 200, f'Пользователь не был активирован'
