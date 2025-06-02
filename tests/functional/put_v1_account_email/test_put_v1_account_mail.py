@@ -30,7 +30,7 @@ def test_put_v1_account_mail():
     account_helper = AccountHelper(dm_account_api=account, mailhog=mailhog)
 
 
-    login = 'trelar22123213'
+    login = 'newtset1'
     password = 'QuinthimaeQuinthimae'
     email = f'{login}@mail.ru'
     json_data = {
@@ -39,8 +39,9 @@ def test_put_v1_account_mail():
         'password': password,
     }
 
+    account_helper.register_new_user(login=login, password=password, email=email)
+    account_helper.user_login(login=login, password=password)
     account_helper.change_registered_email(login=login, password=password, email=email)
-
 
 
 

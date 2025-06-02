@@ -30,8 +30,9 @@ def test_put_v1_account_login():
     account_helper = AccountHelper(dm_account_api=account, mailhog=mailhog)
 
 
-    login = 'testest21'
+    login = 'testest2121321'
     password = 'RaclemanitRaclemanit'
     email = f'{login}@mail.ru'
 
-    account_helper.authenticate_via_credentials(login=login, email=email, password=password)
+    account_helper.register_new_user(login=login, password=password, email=email)
+    account_helper.user_login(login=login, password=password)
