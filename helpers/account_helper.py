@@ -5,9 +5,9 @@ from services.dm_api_account import DMApiAccount
 from services.api_mailhog import MailHogApi
 from retrying import retry
 
-def retry_if_io_error(exception):
-    """Return True if we should retry (in this case when it's an IOError), False otherwise"""
-    return isinstance(exception, IOError)
+def retry_if_result_none(result):
+    """Return True if we should retry (in this case when result is None), False otherwise"""
+    return result is None
 
 
 def retry_if_result_none(
@@ -88,52 +88,6 @@ class AccountHelper:
         assert response.status_code == 200, f'Пользователь не был авторизован'
         return response
 
-    def activate_registered_user(
-            self,
-            login: str,
-            password: str,
-            email: str,
-    ):
-        json_data = {
-            'login': login,
-            'email': email,
-            'password': password,
-        }
-        response = self.dm_account_api.account_api.post_v1_account(json_data=json_data)
-        assert response.status_code == 201, f'Пользователь не был создан {response.json()}'
-
-        token = self.get_activation_token_by_login(login=login)
-        assert token is not None, f'Токен для пользователя {login} не был получен'
-
-        response = self.dm_account_api.account_api.put_v1_account_token(token=token)
-        assert response.status_code == 200, f'Пользователь не был активирован'
-
-    def authenticate_via_credentials(
-            self,
-            login: str,
-            password: str,
-            email: str,
-            remember_me: bool = True,
-    ):
-        json_data = {
-            'login': login,
-            'email': email,
-            'password': password,
-            'rememberMe': remember_me
-        }
-
-        response = self.dm_account_api.account_api.post_v1_account(json_data=json_data)
-        assert response.status_code == 201, f'Пользователь не был создан {response.json()}'
-        token = self.get_activation_token_by_login(login=login)
-        assert token is not None, f'Токен для пользователя {login} не был получен'
-
-        response = self.dm_account_api.account_api.put_v1_account_token(token=token)
-        assert response.status_code == 200, f'Пользователь не был активирован'
-
-        response = self.dm_account_api.login_api.post_v1_account_login(json_data=json_data)
-        assert response.status_code == 200, f'Пользователь не был авторизован'
-        return response
-
     def change_registered_email(
             self,
             login: str,
@@ -141,23 +95,6 @@ class AccountHelper:
             email: str,
             remember_me: bool = True,
     ):
-        json_data = {
-            'login': login,
-            'email': email,
-            'password': password,
-        }
-
-        response = self.dm_account_api.account_api.post_v1_account(json_data=json_data)
-        assert response.status_code == 201, f'Пользователь не был создан {response.json()}'
-        token = self.get_activation_token_by_login(login=login)
-        assert token is not None, f'Токен для пользователя {login} не был получен'
-
-        response = self.dm_account_api.account_api.put_v1_account_token(token=token)
-        assert response.status_code == 200, f'Пользователь не был активирован'
-
-        response = self.dm_account_api.login_api.post_v1_account_login(json_data=json_data)
-        assert response.status_code == 200, f'Пользователь не был авторизован'
-
         newmail = f'{login}@gmail.ru'
         json_data = {
             'login': login,
@@ -183,7 +120,7 @@ class AccountHelper:
         assert response.status_code == 200, f'Пользователь не был активирован'
         return response
 
-    @retry(stop_max_attempt_number=5, retry_on_exception=retry_if_io_error, wait_fixed=1000)
+    @retry(stop_max_attempt_number=5, retry_on_exception=retry_if_result_none, wait_fixed=1000)
     def get_activation_token_by_login(
             self,
             login,
