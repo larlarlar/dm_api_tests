@@ -5,10 +5,6 @@ from services.dm_api_account import DMApiAccount
 from services.api_mailhog import MailHogApi
 from retrying import retry
 
-def retry_if_result_none(result):
-    """Return True if we should retry (in this case when result is None), False otherwise"""
-    return result is None
-
 
 def retry_if_result_none(
         result,
