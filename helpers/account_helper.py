@@ -18,7 +18,7 @@ class AccountHelper:
             self,
             login: str,
             password: str,
-            email: str
+            email: str,
     ):
         json_data = {
             'login': login,
@@ -31,6 +31,10 @@ class AccountHelper:
 
         response = self.mailhog.mailhog_api.get_api_v2_messages()
         assert response.status_code == 200, f'Письма не были получены'
+
+
+
+
 
         token = self.get_activation_token_by_login(login=login, response=response)
         assert token is not None, f'Токен для пользователя {login} не был получен'
@@ -80,11 +84,12 @@ class AccountHelper:
 
         response = self.dm_account_api.login_api.post_v1_account_login(json_data=json_data)
         assert response.status_code == 403, f'Ожидался 403  {response.status_code}, ответ: {response.json()}'
-
         response = self.mailhog.mailhog_api.get_api_v2_messages()
         assert response.status_code == 200, f'Письма после смены email не были получены'
 
-        token = self.get_activation_token_by_login(login, response)
+
+
+        token = self.get_activation_token_by_login(login=login, response=response)
         assert token is not None, f'Токен подтверждения нового email для {login} не был найден'
 
         response = self.dm_account_api.account_api.put_v1_account_token(token=token)
