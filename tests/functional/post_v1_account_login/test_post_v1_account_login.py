@@ -30,7 +30,7 @@ def test_put_v1_account_login():
     account_helper = AccountHelper(dm_account_api=account, mailhog=mailhog)
 
 
-    login = 'tse2'
+    login = 'tse2124'
     password = 'RaclemanitRaclemanit'
     email = f'{login}@mail.ru'
 
