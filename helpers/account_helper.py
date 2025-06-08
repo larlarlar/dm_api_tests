@@ -1,9 +1,11 @@
+import re
 import time
+import json
+from json import JSONDecodeError
 from json import loads
 
 from services.dm_api_account import DMApiAccount
 from services.api_mailhog import MailHogApi
-from retrying import retry
 
 
 def retry_if_result_none(
@@ -115,17 +117,18 @@ class AccountHelper:
 
         return response
 
-    @retry(stop_max_attempt_number=5, retry_on_exception=retry_if_result_none, wait_fixed=1000)
+    @retrier
     def get_activation_token_by_login(
             self,
-            login,
-    ):
-        token = None
+            login
+            ):
         response = self.mailhog.mailhog_api.get_api_v2_messages()
-        for item in response.json()['items']:
-            user_data = loads(item['Content']['Body'])
-            user_login = user_data['Login']
-
-            if user_login == login:
-                token = user_data['ConfirmationLinkUrl'].split('/')[-1]
-        return token
+        for item in response.json().get('items', []):
+            try:
+                user_data = json.loads(item['Content']['Body'])
+                user_login = user_data.get('Login')
+                if user_login == login:
+                    return user_data.get('ConfirmationLinkUrl', '').split('/')[-1]
+            except (JSONDecodeError, KeyError, TypeError):
+                continue
+        return None
