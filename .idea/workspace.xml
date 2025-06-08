@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1968b565-51ed-4264-8b8d-71cd1a4793d5" name="Changes" comment="добавили ретрай">
-      <change beforePath="$PROJECT_DIR$/.idea/dm_api_tests.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dm_api_tests.iml" afterDir="false" />
+    <list default="true" id="1968b565-51ed-4264-8b8d-71cd1a4793d5" name="Changes" comment="добавила фикстуры на имеющиеся тесты">
+      <change afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helpers/account_helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/helpers/account_helper.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/functional/post_v1_account/test_post_v1_account.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/functional/post_v1_account/test_post_v1_account.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/functional/post_v1_account_login/test_post_v1_account_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/functional/post_v1_account_login/test_post_v1_account_login.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/functional/put_v1_account_email/test_put_v1_account_mail.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/functional/put_v1_account_email/test_put_v1_account_mail.py" afterDir="false" />
@@ -61,6 +60,10 @@
     "Python tests.Python tests for test_put_v1_account_mail.test_put_v1_account_mail.executor": "Run",
     "Python tests.Python tests for test_put_v1_account_token.test_put_v1_account_token.executor": "Run",
     "Python tests.Python tests in test_post_v1_account.py.executor": "Run",
+    "Python tests.pytest for functional.post_v1_account.test_post_v1_account.test_post_v1_account.executor": "Run",
+    "Python tests.pytest for functional.post_v1_account_login.test_post_v1_account_login.test_post_v1_account.executor": "Run",
+    "Python tests.pytest for functional.put_v1_account_email.test_put_v1_account_mail.test_put_v1_account_mail.executor": "Run",
+    "Python tests.pytest for functional.put_v1_account_token.test_put_v1_account_token.test_post_v1_account.executor": "Run",
     "Python tests.pytest for test_post_v1_account_login.test_post_v1_account.executor": "Run",
     "Python tests.pytest for test_put_v1_account_token.test_post_v1_account.executor": "Run",
     "Python.decorator.executor": "Run",
@@ -81,93 +84,81 @@
       <recent name="C:\Users\laris\PycharmProjects\dm_api_tests\dm_api_account\apis" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_put_v1_account_mail.test_put_v1_account_mail">
-    <configuration name="Python tests for test_post_v1_account.test_post_v1_account" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.pytest for functional.put_v1_account_email.test_put_v1_account_mail.test_put_v1_account_mail">
+    <configuration name="pytest for functional.post_v1_account_login.test_post_v1_account_login.test_post_v1_account" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="dm_api_tests" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/functional/post_v1_account" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_post_v1_account.test_post_v1_account&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_put_v1_account_mail.test_put_v1_account_mail" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="dm_api_tests" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/functional/put_v1_account_email" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_put_v1_account_mail.test_put_v1_account_mail&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_put_v1_account_token.test_put_v1_account_token" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="dm_api_tests" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/functional/put_v1_account_token" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_put_v1_account_token.test_put_v1_account_token&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="pytest for test_post_v1_account_login.test_post_v1_account" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="dm_api_tests" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/functional/post_v1_account_login" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_post_v1_account_login.test_post_v1_account&quot;" />
+      <option name="_new_target" value="&quot;functional.post_v1_account_login.test_post_v1_account_login.test_post_v1_account&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for test_put_v1_account_token.test_post_v1_account" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for functional.post_v1_account.test_post_v1_account.test_post_v1_account" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="dm_api_tests" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/functional/put_v1_account_token" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_parameters" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_put_v1_account_token.test_post_v1_account&quot;" />
+      <option name="_new_target" value="&quot;functional.post_v1_account.test_post_v1_account.test_post_v1_account&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for functional.put_v1_account_email.test_put_v1_account_mail.test_put_v1_account_mail" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="dm_api_tests" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;functional.put_v1_account_email.test_put_v1_account_mail.test_put_v1_account_mail&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for functional.put_v1_account_token.test_put_v1_account_token.test_post_v1_account" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="dm_api_tests" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;functional.put_v1_account_token.test_put_v1_account_token.test_post_v1_account&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_put_v1_account_mail.test_put_v1_account_mail" />
-        <item itemvalue="Python tests.pytest for test_post_v1_account_login.test_post_v1_account" />
-        <item itemvalue="Python tests.pytest for test_put_v1_account_token.test_post_v1_account" />
-        <item itemvalue="Python tests.Python tests for test_post_v1_account.test_post_v1_account" />
-        <item itemvalue="Python tests.Python tests for test_put_v1_account_token.test_put_v1_account_token" />
+        <item itemvalue="Python tests.pytest for functional.put_v1_account_email.test_put_v1_account_mail.test_put_v1_account_mail" />
+        <item itemvalue="Python tests.pytest for functional.post_v1_account_login.test_post_v1_account_login.test_post_v1_account" />
+        <item itemvalue="Python tests.pytest for functional.put_v1_account_token.test_put_v1_account_token.test_post_v1_account" />
+        <item itemvalue="Python tests.pytest for functional.post_v1_account.test_post_v1_account.test_post_v1_account" />
       </list>
     </recent_temporary>
   </component>
@@ -490,7 +481,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748780874290</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="добавила фикстуры на имеющиеся тесты">
+      <option name="closed" value="true" />
+      <created>1749414260209</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1749414260209</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -518,14 +517,14 @@
     <MESSAGE value="facade" />
     <MESSAGE value="my first decorator" />
     <MESSAGE value="добавили ретрай" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавили ретрай" />
+    <MESSAGE value="добавила фикстуры на имеющиеся тесты" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавила фикстуры на имеющиеся тесты" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/tests/functional/post_v1_account/test_post_v1_account.py</url>
-          <line>56</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
